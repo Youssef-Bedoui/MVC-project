@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Jr0qlCLahclpXR2Vc8An5JlMSetAo_SVNQ&usqp=CAU");
+    width: 100%;
+    margin: 0, 0, 0, 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 170px;
+    color: rgb(230, 230, 230);
+    background-color: rgba(0, 0, 0, 0.444);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#menuContainer {
+    background-image: url("https://wallpaperaccess.com/full/1698007.jpg");
+    height: 800px;
+
+}
+
+#modifpageback {
+    background-image: url("https://wallpaperaccess.com/full/1698007.jpg");
+    height: 800px;
+}
+
+#inputsDiv {
+    width: 50%;
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.addInput {
+    margin: 10px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 4px solid royalblue;
+}
+
+#addButton {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(191, 181, 181);
+    color: black;
+}
+
+#addButton:hover {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(191, 181, 181);
+    color: white;
+    cursor: pointer;
+
+}
+
+#content {
+    width: 60%;
+    height: 500px;
+    background-image: url("");
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)), url("https://blog.placeit.net/wp-content/uploads/2018/04/fastfoodheader_featured.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    filter: grayscale(5px);
+    overflow-y: scroll;
+}
+
+#foodList {
+    width: 75%;
+    height: 100%;
+}
+
+#dashboard {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    margin: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+table {
+    margin: auto !important;
+}
+
+table th {
+    width: 270px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+th {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(138, 159, 200);
+
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+    color: beige;
+    padding-left: 40px;
+}
+
+table table,
+table table td {
+    border: 1px solid #000;
+}
+
+#modifBtn,
+#deleteBtn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#modifBtn {
+    border: 4px solid #4CAF50;
+}
+
+#modifBtn:hover {
+    background-color: #4CAF50;
+    border: 4px solid white;
+}
+
+#deleteBtn {
+    border: 4px solid #f4190e;
+}
+
+#deleteBtn:hover {
+    background-color: #f4190e;
+    border: 4px solid white;
+}
+
+/* generate menu button */
+.wrapper {
+    position: relative;
+}
+
+/* generate menu button */
+.link_wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 42%;
+}
+
+a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+
+a:hover {
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+}
+
+a:hover+.icon {
+    border: 3px solid #2ecc71;
+    right: -25%;
+}
+
+/* MODIF PAGE */
+#modifContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+}
+
+#modifFood,
+#modifPrice,
+#saveModifBtn {
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+}
+
+#modifFood,
+#modifPrice {
+    font-size: 24px;
+}
+
+#saveModifBtn {
+    font-weight: bold;
+    font-style: 35px;
+}
+
+/* FINAL PAGE */
+
+.divToPrint {
+    background-image: url("https://i.pinimg.com/originals/2e/bf/1b/2ebf1bf756f6841cdb26fa9b83562d87.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 2000px;
+}
+
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    body {
+        padding-top: 0;
+        padding-bottom: 24px;
+    }
+
+    section {
+        padding: 80px 0;
+        background-color: aliceblue;
+    }
+
+    h1 {
+        font-size: 20px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+    table th {
+        padding-top: 800px;
+    }
+}
+
+#finalMenu {
+
+    /* padding-top: 250px; */
+    text-align: center;
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1030px) {
+    #finalMenu {
+        padding-top: 250px;
+    }
+}
+@media only screen and (min-width: 667px) and (max-width: 768px) {
+    #finalMenu {
+        padding-top: 200px;
+    }
+}
+@media only screen and (max-width: 667px) {
+    #finalMenu {
+        padding-top: 180px;
+    }
+} */
+
+.finalMenuTh {
+    font-size: 40px;
+    width: 500px;
+    font-weight: bold;
+    color: rgb(35, 65, 123);
+    background-color: transparent !important;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 250px;
+}
+
+.finalMenuTd {
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    padding-left: 40px;
+}
+
+
+
+#printBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 4px solid rgb(77, 77, 77);
+    border-radius: 15px;
+    background-color: #2ecc71;
+    columns: white;
+}
